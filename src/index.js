@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-  let time = 0,
+  let time = 1500,
     count = 0,
     seconds, minutes;
 
