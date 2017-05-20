@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (time == 0) {
       if (count == 8) {
         time = 900;
-        count = 0;
+        count = 1;
       }
       else if (count % 2 == 0) {
         time = 300;
