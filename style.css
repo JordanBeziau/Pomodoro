@@ -2,3 +2,85 @@
 	font-family: Arial, Helvetica, sans-serif;
   font-size: 50px;
 }
+* {box-sizing: border-box;}
+
+div.container {
+  width: 300px;
+  margin: 0 auto;
+  margin-top: 40px;
+  padding: 18px;
+  padding-bottom: 0;
+  text-align: center;
+  background: #00ffcc;
+}
+h1 {
+  font-size: 28px;
+  margin-top: 0;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+  color: #006652;
+}
+time {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  text-align: center;
+  margin-top: 12px;
+  background: #00deb2;
+  color: #006652;
+}
+div.control {
+  width: 152px;
+  height: 167px;
+  padding: 28px;
+  font-size: 0;
+  white-space: nowrap;
+  text-align: center;
+  cursor: pointer;
+}
+.control,
+.control .left,
+.control .right,
+.control::before {
+  display: inline-block;
+  vertical-align: middle;
+  transition: all 0.4s;
+  transition-timing-function: cubic-bezier(1,0,0,1);
+}
+.control::before {
+  content: '';
+  height: 112px;
+}
+.control.pause .left,
+.control.pause .right {
+  margin: 0;
+  border-left: 28.96px solid #00997a;
+  border-top: 0 solid transparent;
+  border-bottom: 0 solid transparent;
+  height: 75.992px;
+}
+.control.pause .left {
+  border-right: 15.4px solid transparent;
+}
+.control.play .left {
+  margin: 0;
+  border-left: 28.496px solid #00997a;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-right: 0px solid transparent;
+  height: 90px;
+}
+.control.play .right {
+  margin: 0;
+  border-left: 31.496px solid #00997a;
+  border-top: 25px solid transparent;
+  border-bottom: 25px solid transparent;
+  height: 0;
+}
+.control:hover {
+  border-color: #00b38f;
+}
+.control:hover .left,
+.control:hover .right {
+  border-left-color: #00b38f;
+}
